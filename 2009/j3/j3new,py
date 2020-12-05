@@ -1,0 +1,51 @@
+import sys
+
+def htom(hr):
+    if hr<100:
+        return hr
+    if hr>=100:
+        return (hr//100)*60 + hr%100
+def mtoh(min):
+    if min<0:
+        min=(24*60)+min
+    elif min>24*60:
+        min=min-(24*60)
+    return (min//60)*100 + min%60
+
+ottawa=int(sys.stdin.readline())
+print(mtoh(htom(ottawa)), "in Ottawa")
+print(mtoh(htom(ottawa)-180), "in Victoria")
+print(mtoh(htom(ottawa)-120), "in Edmonton")
+print(mtoh(htom(ottawa)-60), "in Winnipeg")
+print(mtoh(htom(ottawa)), "in Toronto")
+print(mtoh(htom(ottawa)+60), "in Halifax")
+print(mtoh(htom(ottawa)+90), "in St. John's")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#for victoria
+# print(str(x))
+# y=str(x).zfill(4)
+# timelist=list(y)
+# for i in range(4):
+#     timelist[i]=int(timelist[i])
+# timelist[1]-=3
+# if timelist[1]<0:
+#     timelist[1]=24timelist[1]
+# print(''.join([str(i) for i in timelist]))
