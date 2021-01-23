@@ -59,28 +59,19 @@ for i in range(count):
         for j in range(int(directions[i][1])):
             start[1]-=1
             if start in floorplan:
-                status='DANGER'    
+                status='DANGER'
         print(start,status)
     if directions[i][0]=='r':
         for j in range(int(directions[i][1])):
             start[0]+=1
             if start in floorplan:
-                status='DANGER'    
+                status='DANGER'
         print(start,status)
     if directions[i][0]=='u':
         for j in range(int(directions[i][1])):
             start[1]+=1
             if start in floorplan:
-                status='DANGER'    
+                status='DANGER'
         print(start,status)
     if directions[i][0]=='q':
         quit()
-
-    
-
-
-
-
-
-
-                 
