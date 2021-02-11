@@ -1,5 +1,5 @@
-import sys
-x=int(sys.stdin.readline())
+
+x=int(input())
 firstline=["*","x","*"]
 secondline=[" ","x","x"]
 thirdline=["*"," ","*"]
